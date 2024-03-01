@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-GPT</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="bootstrap.bundle.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .home {
+            height: 100vh;
+        }
+
+        /* .bar{height:4px; background-color:black; margin:5px 0; width:30px;} */
+        .bar {
+            height: 3px;
+            width: 30px;
+        }
+
+        .bar:hover {
+            background-color: black;
+        }
+
+        .bg-gray {
+            background-color: rgb(243, 241, 241);
+        }
+
+        .send {
+            position: relative;
+            top: 15px;
+            right: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid m-0">
+        <div class="row home">
+
+            <!-- Menu -->
+            <div class="col-lg-3 bg-secondary order-first px-3 ">
+
+                <div class="row my-3">
+
+                    <div class="col-9"> <button type="button" class="btn btn-md btn-outline-light w-100 mt-3">+ New
+                            Chat</button> </div>
+
+                    <div class="col-3 text-end">
+                        <button type="button" class="btn btn-md btn-outline-light mt-3">
+                            <!-- <div class="bar my-1 bg-dark"></div>
+                            <div class="bar my-1 bg-dark"></div>
+                            <div class="bar my-1 bg-dark"></div> -->
+                            <i class="zmdi zmdi-menu"></i>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Chat GPT Body -->
+
+            <div class="col-sm-12 col-lg-9 order-second ">
+
+                <div class="col-sm-4 row mt-3 mb-5 mx-auto rounded-4 border p-2"
+                    style="background-color:rgb(243, 241, 241);">
+                    <div class="col p-0"> <button type="button" class="btn bg-light btn-lg w-100 mx-0 py-1 border "> <i
+                                class="zmdi zmdi-flash text-success"></i> &nbsp; GPT 3.5</button> </div>
+                    <div class="col p-0"> <button type="button" class="btn btn-lg w-100 mx-0 py-1 ">GPT 4 &nbsp; <i
+                                class="zmdi zmdi-lock text-secondary"></i> </button> </div>
+                </div>
+
+                <div class="row text-center p-0 my-2">
+                    <h4><b>ChatGPT</b></h4>
+                </div>
+
+                <div class="row mx-auto text-center">
+
+                    <div class="col-lg-1"></div>
+
+                    <div class="row mx-0">
+                        <!-- 1 -->
+                        <div class="col-lg-4">
+                            <div class="col mt-1 mb-4">
+                                <span class="text-secondary"><i class="zmdi zmdi-sun"></i></span>
+                                <h6>Examples</h6>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>"Explain quantum computing in simple terms" →</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>"Got any creative ideas for a 10 year old's birthday?" →</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>"How do I make an HTTP request in Javascript?" →</p>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-lg-4">
+                            <div class="col mt-1 mb-4">
+                                <span class="text-secondary"><i class="zmdi zmdi-flash"></i></span>
+                                <h6>Capabilities</h6>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>Remembers what user said earlier in the conversation</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>Allows user to provide follow-up corrections</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>Trained to decline inappropriate requests</p>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-lg-4">
+                            <div class="col mt-1 mb-4">
+                                <span class="text-secondary"><i class="zmdi zmdi-alert-triangle"></i></span>
+                                <h6>Limitations</h6>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>May occasionally generate incorrect information</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>May occasionally produce harmful instructions or biased content</p>
+                            </div>
+                            <div class="col p-1 m-1 bg-gray rounded-3">
+                                <p>Limited knowledge of world and events after 2021</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-1"></div>
+
+                </div>
+
+                <div class="col-md-8 mx-auto my-4 d-flex">
+                    <textarea cols="30" rows="1" placeholder="Send a message"
+                        class="form-control border w-100 rounded-5 pe-5"> </textarea>
+                    <i class="zmdi zmdi-mail-send text-secondary send"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
